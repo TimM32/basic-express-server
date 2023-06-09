@@ -22,7 +22,7 @@ describe('Server', () => {
   });
 
   test('handles not found', async () => {
-    let response = await mockRequest.get('/foo');
+    let response = await mockRequest.get('/food');
     expect(response.status).toEqual(404);
 
     response = await mockRequest.post('/');

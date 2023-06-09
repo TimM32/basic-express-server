@@ -1,7 +1,10 @@
 'use strict';
 
 const logger = (request, response, next) => {
-  console.log('Middleware logger');
+  console.log({
+    method: request.method,
+    path: request.path,
+  });
   next();
 };
 
