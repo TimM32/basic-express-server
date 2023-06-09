@@ -7,6 +7,3 @@ module.exports = (request, response, next) => {
     next('Path params must be name');
   }
 };
-
-
-
