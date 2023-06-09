@@ -5,7 +5,7 @@ const supertest = require('supertest');
 const mockRequest = supertest(app);
 
 describe('Server', () => {
-  // can be either it() or test()
+  
   it('handles the root path', async () => {
     const response = await mockRequest.get('/');
 
